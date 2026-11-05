@@ -1,0 +1,6 @@
+{
+  "name": "AL ARBAZ CRUISE - Luxury Cruise & Yacht Tours Karachi",
+  "description": "Experience luxury cruise tours, private yacht charters, delicious dining, fishing, and sunset views at Kemari Port, Karachi since 2013.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

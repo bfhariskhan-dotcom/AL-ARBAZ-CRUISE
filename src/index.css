@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-cinzel: "Cinzel", serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-navy-base: #040E26;
+  --color-navy-deep: #061B49;
+  --color-navy-marine: #073B82;
+  --color-ocean-blue: #087CC5;
+  --color-gold-accent: #D6B56D;
+  --color-gold-light: #F3E5C8;
+  --color-sky-soft: #EAF5FF;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: radial-gradient(circle at 50% 0%, #071F48 0%, #04102C 35%, #020716 100%);
+  background-attachment: fixed;
+  color: #F8FAFC;
+  min-height: 100vh;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+/* Luxurious Golden Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #D6B56D #020817;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020817;
+  border-left: 1px solid rgba(214, 181, 109, 0.12);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #F3E5C8 0%, #D6B56D 45%, #B89243 100%);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 245, 219, 0.35);
+  box-shadow: 0 0 10px rgba(214, 181, 109, 0.45);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F3E5C8 40%, #D6B56D 100%);
+  box-shadow: 0 0 14px rgba(214, 181, 109, 0.75);
+}
+
+/* Shimmer animation for golden accents */
+@keyframes goldShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF6DD 0%, #D6B56D 45%, #B89243 70%, #F5E8C7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  border-color: rgba(214, 181, 109, 0.35);
+  box-shadow: 0 0 25px -5px rgba(214, 181, 109, 0.15);
+}
+
+/* Ambient wave animation for subtle luxury motion */
+@keyframes waveFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.4deg);
+  }
+}
+
+.animate-wave-float {
+  animation: waveFloat 8s ease-in-out infinite;
+}
+
+/* Horizontal marquee animation */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marqueeScroll 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
