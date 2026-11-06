@@ -44,7 +44,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                 src={BRAND_INFO.logoUrl}
                 alt="AL ARBAZ CRUISE Logo"
                 referrerPolicy="no-referrer"
-                className="h-24 sm:h-28 lg:h-32 w-auto object-contain transition-transform duration-300 hover:scale-105 drop-shadow-md"
+                className="h-32 sm:h-36 lg:h-36 w-auto object-contain transition-transform duration-300 hover:scale-105 drop-shadow-md"
               />
             </button>
 
@@ -155,6 +155,15 @@ export default function Footer({ onNavigate }: FooterProps) {
                   className="hover:text-[#073B82] text-slate-700 font-medium transition-colors cursor-pointer"
                 >
                   Sunset View
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  onClick={() => handleLinkClick('experience')}
+                  className="hover:text-[#073B82] text-slate-700 font-medium transition-colors cursor-pointer"
+                >
+                  Photography & Moments
                 </button>
               </li>
             </ul>

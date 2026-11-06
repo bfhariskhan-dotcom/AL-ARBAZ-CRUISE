@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Ship, UtensilsCrossed, Fish, Music, Sunset, ArrowRight, CheckCircle2, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Ship, UtensilsCrossed, Fish, Music, Sunset, Camera, ArrowRight, CheckCircle2, ChevronLeft, ChevronRight } from 'lucide-react';
 import { EXPERIENCE_FEATURES, BRAND_INFO } from '../data/cruiseData';
 import { WhatsAppIcon } from './SocialIcons';
 
@@ -16,6 +16,7 @@ export default function ExperienceFeatures({ onOpenBookingModal }: ExperienceFea
     Fish: <Fish className="w-6 h-6" />,
     Music: <Music className="w-6 h-6" />,
     Sunset: <Sunset className="w-6 h-6" />,
+    Camera: <Camera className="w-6 h-6" />,
   };
 
   const activeIndex = EXPERIENCE_FEATURES.findIndex((f) => f.id === selectedExpId);
@@ -42,11 +43,11 @@ export default function ExperienceFeatures({ onOpenBookingModal }: ExperienceFea
             </span>
           </div>
           <h2 className="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-4">
-            Five Signature Cruise Experiences
+            Six Signature Cruise Experiences
           </h2>
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
             Each Al Arbaz voyage blends relaxation, delicious culinary craftsmanship, sport,
-            and Arabian Sea scenery into one harmonious weekend journey.
+            photography, and Arabian Sea scenery into one harmonious weekend journey.
           </p>
         </div>
 
@@ -59,14 +60,14 @@ export default function ExperienceFeatures({ onOpenBookingModal }: ExperienceFea
 
             {/* Scroll indicator prompt with right arrow as requested */}
             <div className="inline-flex items-center gap-1.5 text-xs text-slate-400">
-              <span className="hidden sm:inline">Scroll to explore all 5 experiences</span>
+              <span className="hidden sm:inline">Scroll to explore all 6 experiences</span>
               <span className="sm:hidden">Swipe or Slide</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#D6B56D] animate-pulse" />
             </div>
           </div>
 
           {/* Cards Bar */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
             {EXPERIENCE_FEATURES.map((feature) => {
               const isSelected = feature.id === selectedExpId;
               return (

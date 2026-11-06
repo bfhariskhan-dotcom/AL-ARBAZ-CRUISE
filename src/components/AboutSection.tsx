@@ -8,6 +8,7 @@ export default function AboutSection() {
     { title: 'Family & Friends Gatherings', desc: 'Dedicated private seating and warm hospitable atmosphere' },
     { title: 'Dining & Entertainment', desc: 'Fresh hot buffet dinner, hi-tea, and music system on deck' },
     { title: 'Beautiful Sunset Views', desc: 'Witness the iconic Karachi coastline sunset from the open sea' },
+    { title: 'Photography & Memorable Moments', desc: 'Golden hour backdrops and observation deck angles for lasting photos' },
   ];
 
   return (

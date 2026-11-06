@@ -57,11 +57,10 @@ export interface GalleryItem {
 export interface VideoItem {
   id: string;
   title: string;
-  platform: 'Streamable' | 'Facebook';
-  embedUrl: string;
-  directUrl: string;
+  videoUrl: string;
   description: string;
   thumbnail: string;
+  highlights?: string[];
 }
 
 export interface BookingFormData {

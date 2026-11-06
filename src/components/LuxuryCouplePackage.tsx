@@ -102,7 +102,7 @@ Please confirm availability and booking procedure.`;
                 <div className="relative rounded-2xl overflow-hidden border border-[#D6B56D]/50 shadow-2xl group">
                   <div className="aspect-[4/3] overflow-hidden">
                     <img
-                      src={CRUISE_IMAGES.heroDeck}
+                      src={CRUISE_IMAGES.photographyMoments}
                       alt="Luxury Couple Private Cruise"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"

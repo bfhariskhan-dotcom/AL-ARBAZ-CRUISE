@@ -32,6 +32,7 @@ export const CRUISE_IMAGES = {
   diningBuffet: '/src/assets/images/dining_buffet_spread_1793864384357.jpg',
   fishingSunset: '/src/assets/images/fishing_sunset_moment_1793864385381.jpg',
   nightLights: '/src/assets/images/cruise_night_lights_1793864385426.jpg',
+  photographyMoments: 'https://i.postimg.cc/5yQn3vqt/Whats-App-Image-2026-11-06-at-6-16-35-PM.jpg',
 };
 
 export const HERO_SLIDES: HeroSlide[] = [
@@ -141,6 +142,16 @@ export const EXPERIENCE_FEATURES: ExperienceFeature[] = [
     image: CRUISE_IMAGES.heroSunset,
     highlights: ['Golden hour photography opportunities', 'Unobstructed 360-degree horizon', 'Magical dusk skyline reflection', 'Tranquil sea breeze at twilight'],
   },
+  {
+    id: 'photography',
+    number: '06',
+    title: 'PHOTOGRAPHY & MOMENTS',
+    shortDesc: 'Capture aesthetic photos and unforgettable portraits against the Arabian Sea.',
+    fullDesc: 'Preserve cherished moments with stunning photography backdrops. From the sun setting over the open ocean to candid smiles on the observation deck, our scenic cruise routes offer perfect golden hour angles for family albums, Instagram reels, and commemorative portraits.',
+    iconName: 'Camera',
+    image: CRUISE_IMAGES.photographyMoments,
+    highlights: ['Scenic Arabian Sea horizon angles', 'Golden hour lighting for photos', 'Observation deck photo spots', 'Capture timeless family & couple portraits'],
+  },
 ];
 
 export const HI_TEA_MENU: MenuItem[] = [
@@ -166,26 +177,39 @@ export const BUFFET_MENU: MenuItem[] = [
 
 export const VIDEO_SHOWCASE: VideoItem[] = [
   {
-    id: 'streamable-video',
-    title: 'Al Arbaz Cruise Video Experience',
-    platform: 'Streamable',
-    embedUrl: 'https://streamable.com/e/ezp0sq?autoplay=0&muted=1',
-    directUrl: 'https://streamable.com/ezp0sq',
-    description: 'Experience the real sights, open sea breeze, guest enjoyment, and evening vibes on board Al Arbaz Cruise at Kemari.',
-    thumbnail: CRUISE_IMAGES.heroSunset,
+    id: 'video-1',
+    title: 'Kemari Port Departure & Sea Voyage',
+    videoUrl: 'https://ajt247.com/uploads/video%201%20(1).mp4',
+    description: 'Experience the exhilarating departure from Kemari harbor into the open Arabian Sea with panoramic open-deck breezes.',
+    thumbnail: CRUISE_IMAGES.heroDeck,
+    highlights: ['Kemari Harbor Departure', 'Arabian Sea Cruise Ride', 'Open Observation Deck', 'Licensed Captain Navigation'],
   },
   {
-    id: 'facebook-reel',
-    title: 'Official Reel – Arabian Sea Journey',
-    platform: 'Facebook',
-    embedUrl: 'https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1162064573173241%2F&show_text=false&t=0',
-    directUrl: 'https://www.facebook.com/reel/1162064573173241/',
-    description: 'Watch our featured Facebook Reel capturing sunset moments, dining, and guests celebrating special occasions.',
-    thumbnail: CRUISE_IMAGES.nightLights,
+    id: 'video-2',
+    title: 'Arabian Sea Sunset & Deck Moments',
+    videoUrl: 'https://ajt247.com/uploads/video%201%20(2).mp4',
+    description: 'Catch the magical golden sunset dipping across the horizon while enjoying tea, music, and fishing at sea.',
+    thumbnail: CRUISE_IMAGES.heroSunset,
+    highlights: ['Golden Hour Horizon View', 'Live Sea Fishing Activity', 'Fresh Evening Hi-Tea', 'Peaceful Oceanic Breeze'],
+  },
+  {
+    id: 'video-3',
+    title: 'Dining Festivities & Cruise Celebrations',
+    videoUrl: 'https://ajt247.com/uploads/video%201%20(3).mp4',
+    description: 'Watch guests delight in our hot Pakistani dinner buffet banquet, music entertainment, and joyful family celebrations.',
+    thumbnail: CRUISE_IMAGES.photographyMoments,
+    highlights: ['Grand Pakistani Buffet Spread', 'Marine Sound & Celebration Music', 'Family & Kids Atmosphere', 'Unforgettable Weekend Memories'],
   },
 ];
 
 export const GALLERY_ITEMS: GalleryItem[] = [
+  {
+    id: 'g-featured-moment',
+    title: 'Cherished Cruise Celebration & Portrait',
+    category: 'Cruise Celebrations',
+    image: CRUISE_IMAGES.photographyMoments,
+    caption: 'Memorable family and couple moments captured aboard Al Arbaz Cruise along Karachi coast.',
+  },
   {
     id: 'g-1',
     title: 'Sunset Cruise Over Arabian Sea',

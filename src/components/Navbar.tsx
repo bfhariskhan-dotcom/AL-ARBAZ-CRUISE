@@ -49,7 +49,7 @@ export default function Navbar({ currentPage, onNavigate, onOpenBookingModal }: 
                 src={BRAND_INFO.logoUrl}
                 alt="AL ARBAZ CRUISE Logo"
                 referrerPolicy="no-referrer"
-                className="h-14 sm:h-20 lg:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-sm"
+                className="h-20 sm:h-22 lg:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-sm"
               />
             </button>
 
@@ -140,7 +140,7 @@ export default function Navbar({ currentPage, onNavigate, onOpenBookingModal }: 
                     src={BRAND_INFO.logoUrl}
                     alt="AL ARBAZ CRUISE Logo"
                     referrerPolicy="no-referrer"
-                    className="h-16 sm:h-20 w-auto object-contain drop-shadow-sm"
+                    className="h-24 sm:h-28 w-auto object-contain drop-shadow-sm"
                   />
                 </button>
                 <button

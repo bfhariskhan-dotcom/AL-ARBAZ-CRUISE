@@ -55,13 +55,13 @@ export default function ExperiencePage({ onOpenBookingModal }: ExperiencePagePro
       <PageHeader
         title="CRUISE EXPERIENCE & DINING"
         tagline="Signature Activities & Cuisine"
-        subtitle="Explore our 5 core cruise experiences alongside our sumptuous Hi-Tea and multi-course Pakistani buffet."
+        subtitle="Explore our 6 core cruise experiences alongside our sumptuous Hi-Tea and multi-course Pakistani buffet."
         bgImage={CRUISE_IMAGES.diningBuffet}
       />
 
       <LuxuryMarquee />
 
-      {/* 5 Signature Cruise Experiences */}
+      {/* 6 Signature Cruise Experiences */}
       <ExperienceFeatures onOpenBookingModal={onOpenBookingModal} />
 
       {/* Comprehensive Food & Dining Menus */}

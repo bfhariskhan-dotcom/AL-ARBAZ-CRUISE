@@ -21,7 +21,7 @@ export default function GalleryPage({ onOpenBookingModal }: GalleryPageProps) {
 
       <LuxuryMarquee />
 
-      {/* Official Video Showcase: Streamable & Facebook Reel */}
+      {/* Official Video Showcase: 3 Authentic MP4 Cruise Reels */}
       <VideoSection />
 
       {/* Premium Image Gallery with Lightbox */}
