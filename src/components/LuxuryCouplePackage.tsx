@@ -163,7 +163,7 @@ Please confirm availability and booking procedure.`;
                     <span className="text-[11px] text-slate-400">Select preference:</span>
                   </div>
 
-                  <div className="grid grid-cols-3 gap-2.5">
+                  <div className="grid grid-cols-3 gap-2 sm:gap-2.5">
                     {(['Lunch', 'Dinner', 'Hi-Tea'] as const).map((meal) => {
                       const isSelected = selectedMeal === meal;
                       return (
@@ -171,13 +171,13 @@ Please confirm availability and booking procedure.`;
                           key={meal}
                           type="button"
                           onClick={() => setSelectedMeal(meal)}
-                          className={`py-2 px-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer flex items-center justify-center gap-1.5 ${
+                          className={`py-2 px-1.5 sm:px-3 rounded-lg text-[11px] sm:text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer flex items-center justify-center gap-1 sm:gap-1.5 ${
                             isSelected
                               ? 'bg-gradient-to-r from-[#D6B56D] to-[#F3E5C8] text-[#061B49] shadow-md border border-[#D6B56D]'
                               : 'bg-[#040E26] text-slate-300 hover:text-white hover:bg-[#073B82] border border-slate-800'
                           }`}
                         >
-                          <Utensils className="w-3.5 h-3.5" />
+                          <Utensils className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                           <span>{meal}</span>
                         </button>
                       );

@@ -71,11 +71,11 @@ export default function DiningExperience({ onOpenBookingModal }: DiningExperienc
         </div>
 
         {/* Menu Navigation Switcher */}
-        <div className="flex items-center justify-center gap-2 mb-10">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-2.5 sm:gap-3 mb-10 max-w-md mx-auto sm:max-w-none">
           <button
             type="button"
             onClick={() => setActiveMenuTab('buffet')}
-            className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
+            className={`inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
               activeMenuTab === 'buffet'
                 ? 'bg-[#073B82] text-white border border-[#D6B56D] shadow-lg'
                 : 'bg-[#040E26] text-slate-400 hover:text-white border border-slate-800'
@@ -88,7 +88,7 @@ export default function DiningExperience({ onOpenBookingModal }: DiningExperienc
           <button
             type="button"
             onClick={() => setActiveMenuTab('hitea')}
-            className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
+            className={`inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${
               activeMenuTab === 'hitea'
                 ? 'bg-[#073B82] text-white border border-[#D6B56D] shadow-lg'
                 : 'bg-[#040E26] text-slate-400 hover:text-white border border-slate-800'

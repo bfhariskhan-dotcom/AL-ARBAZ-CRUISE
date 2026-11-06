@@ -34,10 +34,10 @@ export default function Navbar({ currentPage, onNavigate, onOpenBookingModal }: 
 
   return (
     <>
-      {/* White Background Header as requested */}
-      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-md border-b border-slate-200 py-2.5 transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between gap-6">
+      {/* White Background Header (Non-sticky as requested) */}
+      <header className="relative z-40 bg-white shadow-sm border-b border-slate-200 py-2 sm:py-2.5 transition-all duration-300">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between gap-2 sm:gap-6">
             {/* Left: ONLY BRAND LOGO (No text name) */}
             <button
               type="button"
@@ -49,7 +49,7 @@ export default function Navbar({ currentPage, onNavigate, onOpenBookingModal }: 
                 src={BRAND_INFO.logoUrl}
                 alt="AL ARBAZ CRUISE Logo"
                 referrerPolicy="no-referrer"
-                className="h-20 sm:h-22 lg:h-24 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-sm"
+                className="h-16 xs:h-20 sm:h-22 lg:h-24 w-auto max-w-[130px] xs:max-w-[160px] sm:max-w-none object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-sm"
               />
             </button>
 
@@ -93,8 +93,8 @@ export default function Navbar({ currentPage, onNavigate, onOpenBookingModal }: 
               </a>
             </div>
 
-            {/* Mobile Menu Button */}
-            <div className="flex sm:hidden items-center gap-2">
+            {/* Mobile Actions: WhatsApp Icon + Hamburger Button */}
+            <div className="flex sm:hidden items-center gap-1.5 xs:gap-2 shrink-0">
               <a
                 href={directWhatsAppUrl}
                 target="_blank"

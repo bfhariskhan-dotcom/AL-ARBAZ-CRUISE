@@ -67,7 +67,7 @@ export default function ExperienceFeatures({ onOpenBookingModal }: ExperienceFea
           </div>
 
           {/* Cards Bar */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 sm:gap-3">
             {EXPERIENCE_FEATURES.map((feature) => {
               const isSelected = feature.id === selectedExpId;
               return (
@@ -75,7 +75,7 @@ export default function ExperienceFeatures({ onOpenBookingModal }: ExperienceFea
                   key={feature.id}
                   type="button"
                   onClick={() => setSelectedExpId(feature.id)}
-                  className={`p-4 rounded-xl text-left transition-all duration-300 border flex flex-col justify-between group cursor-pointer ${
+                  className={`p-3 sm:p-4 rounded-xl text-left transition-all duration-300 border flex flex-col justify-between group cursor-pointer ${
                     isSelected
                       ? 'bg-gradient-to-b from-[#073B82] to-[#061B49] border-[#D6B56D] shadow-lg shadow-blue-950/50'
                       : 'bg-[#030B1C]/80 border-slate-800 hover:border-[#073B82] hover:bg-[#061B49]/40'
@@ -123,7 +123,7 @@ export default function ExperienceFeatures({ onOpenBookingModal }: ExperienceFea
               <ChevronLeft className="w-4 h-4" />
             </button>
             <span className="text-xs font-mono text-slate-400 px-2">
-              0{activeIndex + 1} / 05
+              0{activeIndex + 1} / 06
             </span>
             <button
               type="button"
@@ -158,7 +158,7 @@ export default function ExperienceFeatures({ onOpenBookingModal }: ExperienceFea
             <div className="lg:col-span-5 p-6 sm:p-8 lg:p-10 flex flex-col justify-between text-center sm:text-left">
               <div>
                 <span className="text-xs font-mono uppercase tracking-widest text-[#D6B56D] block mb-2">
-                  Feature {activeFeature.number} of 05
+                  Feature {activeFeature.number} of 06
                 </span>
                 <h3 className="font-cinzel text-2xl sm:text-3xl font-bold text-white mb-3">
                   {activeFeature.title}

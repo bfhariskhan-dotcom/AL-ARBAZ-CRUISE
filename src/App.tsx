@@ -54,7 +54,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#020716] via-[#04122C] to-[#020716] text-white flex flex-col selection:bg-[#D6B56D] selection:text-[#061B49] relative">
+    <div className="min-h-screen bg-gradient-to-b from-[#020716] via-[#04122C] to-[#020716] text-white flex flex-col selection:bg-[#D6B56D] selection:text-[#061B49] relative overflow-x-clip w-full">
       {/* Scroll Reading Progress Bar */}
       <ScrollProgressBar />
 
@@ -64,15 +64,15 @@ export default function App() {
       {/* Animated Top Announcement Bar (Zero Emojis, Pure Luxury Text) */}
       <TopAnnouncementBar />
 
-      {/* Sticky Luxury Navigation Header (ONLY Logo, Multi-Page Navigation) */}
+      {/* Luxury Navigation Header (Non-sticky, ONLY Logo, Multi-Page Navigation) */}
       <Navbar
         currentPage={currentPage}
         onNavigate={handleNavigate}
         onOpenBookingModal={handleOpenBookingModal}
       />
 
-      {/* 5 Distinct Luxury Pages */}
-      <main className="flex-1">
+      {/* Luxury Pages */}
+      <main className="flex-1 w-full max-w-full overflow-x-clip">
         {currentPage === 'home' && (
           <HomePage
             onOpenBookingModal={handleOpenBookingModal}
