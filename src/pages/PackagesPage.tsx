@@ -1,5 +1,6 @@
 import PageHeader from '../components/PageHeader';
 import LuxuryMarquee from '../components/LuxuryMarquee';
+import LuxuryCouplePackage from '../components/LuxuryCouplePackage';
 import FeaturedPackage from '../components/FeaturedPackage';
 import FAQSection from '../components/FAQSection';
 import { CRUISE_IMAGES, BRAND_INFO } from '../data/cruiseData';
@@ -50,6 +51,9 @@ export default function PackagesPage({ onOpenBookingModal }: PackagesPageProps) 
       />
 
       <LuxuryMarquee />
+
+      {/* Luxury Couple Package for 02 Guests on Private Cruise */}
+      <LuxuryCouplePackage onOpenBookingModal={onOpenBookingModal} />
 
       {/* Flagship Featured Package with Live Calculator */}
       <FeaturedPackage onOpenBookingModal={onOpenBookingModal} />

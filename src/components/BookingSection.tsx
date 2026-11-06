@@ -144,6 +144,9 @@ Please share availability and reservation information.`;
                       }
                       className="w-full px-4 py-3 rounded-lg bg-[#040E26] border border-slate-700 focus:border-[#D6B56D] focus:ring-1 focus:ring-[#D6B56D] text-white text-sm outline-none transition-colors"
                     >
+                      <option value="Luxury Couple Package for 02 Guests on Private Cruise (Rs. 75,000/-)">
+                        Luxury Couple Package (02 Guests · Rs. 75,000/-)
+                      </option>
                       <option value="Weekend Social Cruise Package (03 Hours)">
                         Weekend Social Cruise Package (03 Hours)
                       </option>

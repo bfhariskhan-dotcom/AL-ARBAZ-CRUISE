@@ -25,8 +25,10 @@ export default function BookingModal({
 
   if (!isOpen) return null;
 
-  const estimatedTotal =
-    adults * FEATURED_PACKAGE.adultPrice + kids * FEATURED_PACKAGE.kidsPrice;
+  const isCouplePackage = preselectedPackage.toLowerCase().includes('couple');
+  const estimatedTotal = isCouplePackage
+    ? 75000
+    : adults * FEATURED_PACKAGE.adultPrice + kids * FEATURED_PACKAGE.kidsPrice;
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();

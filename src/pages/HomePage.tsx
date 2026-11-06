@@ -1,5 +1,6 @@
 import HeroSlider from '../components/HeroSlider';
 import LuxuryMarquee from '../components/LuxuryMarquee';
+import LuxuryCouplePackage from '../components/LuxuryCouplePackage';
 import FeaturedPackage from '../components/FeaturedPackage';
 import ExperienceFeatures from '../components/ExperienceFeatures';
 import DiningExperience from '../components/DiningExperience';
@@ -21,6 +22,9 @@ export default function HomePage({ onOpenBookingModal, onNavigate }: HomePagePro
 
       {/* Moving Luxury Marquee Ticker */}
       <LuxuryMarquee />
+
+      {/* Luxury Couple Package for 02 Guests on Private Cruise (Right after Banner) */}
+      <LuxuryCouplePackage onOpenBookingModal={onOpenBookingModal} />
 
       {/* Featured Weekend Social Cruise Package with Fare Calculator */}
       <FeaturedPackage onOpenBookingModal={onOpenBookingModal} />
