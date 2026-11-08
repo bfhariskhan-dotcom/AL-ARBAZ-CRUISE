@@ -38,19 +38,29 @@ export default function Navbar({ currentPage, onNavigate, onOpenBookingModal }: 
       <header className="relative z-40 bg-white shadow-sm border-b border-slate-200 py-2 sm:py-2.5 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-2 sm:gap-6">
-            {/* Left: ONLY BRAND LOGO (No text name) */}
+            {/* Left: BRAND LOGO + Website Name (ONLY in mobile header as requested) */}
             <button
               type="button"
               onClick={() => handleNavClick('home')}
-              className="flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#073B82] rounded cursor-pointer shrink-0"
+              className="flex items-center gap-2.5 xs:gap-3.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#073B82] rounded cursor-pointer shrink-0"
               aria-label="Al Arbaz Cruise Home"
             >
               <img
                 src={BRAND_INFO.logoUrl}
                 alt="AL ARBAZ CRUISE Logo"
                 referrerPolicy="no-referrer"
-                className="h-16 xs:h-20 sm:h-22 lg:h-24 w-auto max-w-[130px] xs:max-w-[160px] sm:max-w-none object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-sm"
+                className="h-18 xs:h-22 sm:h-24 lg:h-24 w-auto max-w-[85px] xs:max-w-[110px] sm:max-w-none object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-sm shrink-0"
               />
+
+              {/* Website Name: 2 Lines, Grand & Prominently Sized for Mobile Header */}
+              <div className="flex flex-col text-left lg:hidden justify-center select-none pl-1">
+                <span className="font-cinzel text-xl xs:text-2xl sm:text-3xl font-black tracking-wide text-[#061B49] uppercase leading-none drop-shadow-xs">
+                  AL ARBAZ
+                </span>
+                <span className="font-cinzel text-xs xs:text-sm sm:text-base font-extrabold tracking-[0.26em] text-[#B89243] uppercase mt-1 leading-none">
+                  CRUISE
+                </span>
+              </div>
             </button>
 
             {/* Center: Desktop Navigation Across Pages (Dark text for white navbar) */}
@@ -80,8 +90,8 @@ export default function Navbar({ currentPage, onNavigate, onOpenBookingModal }: 
               })}
             </nav>
 
-            {/* Right: ONLY ONE CLEAN BUTTON "Booking" (No Inquire Date button, no phone numbers) */}
-            <div className="hidden sm:flex items-center gap-3 shrink-0">
+            {/* Right: ONLY ONE CLEAN BUTTON "Booking" on Desktop */}
+            <div className="hidden lg:flex items-center gap-3 shrink-0">
               <a
                 href={directWhatsAppUrl}
                 target="_blank"
@@ -94,7 +104,7 @@ export default function Navbar({ currentPage, onNavigate, onOpenBookingModal }: 
             </div>
 
             {/* Mobile Actions: WhatsApp Icon + Hamburger Button */}
-            <div className="flex sm:hidden items-center gap-1.5 xs:gap-2 shrink-0">
+            <div className="flex lg:hidden items-center gap-1.5 xs:gap-2 shrink-0">
               <a
                 href={directWhatsAppUrl}
                 target="_blank"
