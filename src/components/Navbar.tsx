@@ -214,8 +214,9 @@ export default function Navbar({ currentPage, onNavigate, onOpenBookingModal }: 
               <div className="pt-2 flex items-center justify-center gap-4">
                 <a
                   href={BRAND_INFO.facebookUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  onClick={(e) => {
+                    if (BRAND_INFO.facebookUrl === '#') e.preventDefault();
+                  }}
                   className="p-2.5 rounded-full bg-[#073B82]/40 text-[#D6B56D] hover:text-white hover:bg-[#073B82] border border-[#073B82] transition-colors"
                   aria-label="Facebook"
                 >
@@ -224,8 +225,9 @@ export default function Navbar({ currentPage, onNavigate, onOpenBookingModal }: 
 
                 <a
                   href={BRAND_INFO.instagramUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  onClick={(e) => {
+                    if (BRAND_INFO.instagramUrl === '#') e.preventDefault();
+                  }}
                   className="p-2.5 rounded-full bg-[#073B82]/40 text-[#D6B56D] hover:text-white hover:bg-[#073B82] border border-[#073B82] transition-colors"
                   aria-label="Instagram"
                 >

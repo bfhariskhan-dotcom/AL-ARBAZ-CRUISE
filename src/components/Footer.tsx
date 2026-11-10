@@ -57,8 +57,9 @@ export default function Footer({ onNavigate }: FooterProps) {
             <div className="flex items-center justify-center md:justify-start gap-3 pt-2">
               <a
                 href={BRAND_INFO.facebookUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={(e) => {
+                  if (BRAND_INFO.facebookUrl === '#') e.preventDefault();
+                }}
                 className="p-2.5 rounded-full bg-slate-100 text-[#073B82] hover:text-white hover:bg-[#073B82] border border-slate-300 transition-colors shadow-sm"
                 aria-label="Facebook"
               >
@@ -66,8 +67,9 @@ export default function Footer({ onNavigate }: FooterProps) {
               </a>
               <a
                 href={BRAND_INFO.instagramUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={(e) => {
+                  if (BRAND_INFO.instagramUrl === '#') e.preventDefault();
+                }}
                 className="p-2.5 rounded-full bg-slate-100 text-[#073B82] hover:text-white hover:bg-[#073B82] border border-slate-300 transition-colors shadow-sm"
                 aria-label="Instagram"
               >

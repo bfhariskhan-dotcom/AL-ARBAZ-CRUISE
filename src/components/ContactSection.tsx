@@ -133,8 +133,9 @@ export default function ContactSection() {
               <div className="flex items-center gap-3">
                 <a
                   href={BRAND_INFO.facebookUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  onClick={(e) => {
+                    if (BRAND_INFO.facebookUrl === '#') e.preventDefault();
+                  }}
                   className="p-3 rounded-full bg-[#073B82]/40 text-[#D6B56D] hover:text-white hover:bg-[#073B82] border border-[#073B82] transition-colors"
                   aria-label="Official Facebook"
                 >
@@ -142,8 +143,9 @@ export default function ContactSection() {
                 </a>
                 <a
                   href={BRAND_INFO.instagramUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  onClick={(e) => {
+                    if (BRAND_INFO.instagramUrl === '#') e.preventDefault();
+                  }}
                   className="p-3 rounded-full bg-[#073B82]/40 text-[#D6B56D] hover:text-white hover:bg-[#073B82] border border-[#073B82] transition-colors"
                   aria-label="Official Instagram"
                 >
