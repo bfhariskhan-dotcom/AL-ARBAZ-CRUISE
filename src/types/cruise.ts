@@ -73,3 +73,12 @@ export interface BookingFormData {
   timeSlot: string;
   specialRequirements: string;
 }
+
+export interface HourlyRentalRate {
+  hours: number;
+  durationLabel: string;
+  price: number;
+  priceFormatted: string;
+  badge?: string;
+}
+

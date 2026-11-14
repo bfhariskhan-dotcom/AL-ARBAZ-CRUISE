@@ -2,6 +2,7 @@ import HeroSlider from '../components/HeroSlider';
 import LuxuryMarquee from '../components/LuxuryMarquee';
 import LuxuryCouplePackage from '../components/LuxuryCouplePackage';
 import FeaturedPackage from '../components/FeaturedPackage';
+import HourlyRentalCharges from '../components/HourlyRentalCharges';
 import ExperienceFeatures from '../components/ExperienceFeatures';
 import DiningExperience from '../components/DiningExperience';
 import VideoSection from '../components/VideoSection';
@@ -29,7 +30,10 @@ export default function HomePage({ onOpenBookingModal, onNavigate }: HomePagePro
       {/* Featured Weekend Social Cruise Package with Fare Calculator */}
       <FeaturedPackage onOpenBookingModal={onOpenBookingModal} />
 
-      {/* Five Signature Cruise Experiences */}
+      {/* Hourly Rental Charges (2 to 10 Hours Private Charter Rates) */}
+      <HourlyRentalCharges onOpenBookingModal={onOpenBookingModal} />
+
+      {/* Six Signature Cruise Experiences */}
       <ExperienceFeatures onOpenBookingModal={onOpenBookingModal} />
 
       {/* Food & Dining Showcase: Hi-Tea & Grand Buffet */}

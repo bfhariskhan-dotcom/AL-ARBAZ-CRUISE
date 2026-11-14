@@ -5,6 +5,7 @@ import {
   MenuItem,
   GalleryItem,
   VideoItem,
+  HourlyRentalRate,
 } from '../types/cruise';
 
 export const BRAND_INFO = {
@@ -324,3 +325,26 @@ export const FAQS = [
     answer: 'Fill out our booking inquiry form or click any WhatsApp button on this site. Your inquiry is directly sent to our official WhatsApp (+923093611116) with all details for immediate date confirmation.',
   },
 ];
+
+export const HOURLY_RENTAL_IMAGE = '/assets/aistudio/WhatsApp_Image_2026-11-13_at_4.46.28_PM_feb3739d.jpeg';
+
+export const HOURLY_RENTAL_CHARGES: HourlyRentalRate[] = [
+  { hours: 2, durationLabel: '2 Hours', price: 60000, priceFormatted: '60,000' },
+  { hours: 3, durationLabel: '3 Hours', price: 90000, priceFormatted: '90,000', badge: 'Popular' },
+  { hours: 4, durationLabel: '4 Hours', price: 120000, priceFormatted: '120,000' },
+  { hours: 5, durationLabel: '5 Hours', price: 140000, priceFormatted: '140,000' },
+  { hours: 6, durationLabel: '6 Hours', price: 160000, priceFormatted: '160,000', badge: 'Best Value' },
+  { hours: 7, durationLabel: '7 Hours', price: 180000, priceFormatted: '180,000' },
+  { hours: 8, durationLabel: '8 Hours', price: 200000, priceFormatted: '200,000' },
+  { hours: 9, durationLabel: '9 Hours', price: 220000, priceFormatted: '220,000' },
+  { hours: 10, durationLabel: '10 Hours', price: 240000, priceFormatted: '240,000', badge: 'Full Day' },
+];
+
+export const HOURLY_RENTAL_NOTES: string[] = [
+  'Maximum 70 guests permitted on board.',
+  'Bottom fishing rods and fishing hooks are available on board.',
+  'The staff on board includes a Captain and attendants.',
+  'Decor is arranged on request and is charged separately.',
+  'We operate from Kemari harbour. The route is dependent on the weather and is conclusively decided by the Captain.',
+];
+

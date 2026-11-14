@@ -150,6 +150,9 @@ Please share availability and reservation information.`;
                       <option value="Weekend Social Cruise Package (03 Hours)">
                         Weekend Social Cruise Package (03 Hours)
                       </option>
+                      <option value="Private Cruise Hourly Rental (2 to 10 Hours · Rs. 60,000 - 240,000)">
+                        Private Cruise Hourly Rental (2–10 Hours)
+                      </option>
                       <option value="Private Family Yacht Charter (Custom)">
                         Private Family Yacht Charter (Custom)
                       </option>

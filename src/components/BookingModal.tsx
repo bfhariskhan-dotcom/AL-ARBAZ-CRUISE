@@ -26,9 +26,15 @@ export default function BookingModal({
   if (!isOpen) return null;
 
   const isCouplePackage = preselectedPackage.toLowerCase().includes('couple');
+  const isHourlyCharter = preselectedPackage.toLowerCase().includes('hourly charter');
+  const hourlyMatch = preselectedPackage.match(/Rs\.\s*([\d,]+)/i);
+  const hourlyPrice = hourlyMatch ? parseInt(hourlyMatch[1].replace(/,/g, ''), 10) : 90000;
+
   const estimatedTotal = isCouplePackage
     ? 75000
-    : adults * FEATURED_PACKAGE.adultPrice + kids * FEATURED_PACKAGE.kidsPrice;
+    : isHourlyCharter
+      ? hourlyPrice
+      : adults * FEATURED_PACKAGE.adultPrice + kids * FEATURED_PACKAGE.kidsPrice;
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();

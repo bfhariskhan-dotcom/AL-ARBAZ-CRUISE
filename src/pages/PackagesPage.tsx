@@ -2,6 +2,7 @@ import PageHeader from '../components/PageHeader';
 import LuxuryMarquee from '../components/LuxuryMarquee';
 import LuxuryCouplePackage from '../components/LuxuryCouplePackage';
 import FeaturedPackage from '../components/FeaturedPackage';
+import HourlyRentalCharges from '../components/HourlyRentalCharges';
 import FAQSection from '../components/FAQSection';
 import { CRUISE_IMAGES, BRAND_INFO } from '../data/cruiseData';
 import { Users, Clock, Anchor, Check, ShieldCheck } from 'lucide-react';
@@ -57,6 +58,9 @@ export default function PackagesPage({ onOpenBookingModal }: PackagesPageProps) 
 
       {/* Flagship Featured Package with Live Calculator */}
       <FeaturedPackage onOpenBookingModal={onOpenBookingModal} />
+
+      {/* Hourly Rental Charges Table */}
+      <HourlyRentalCharges onOpenBookingModal={onOpenBookingModal} />
 
       {/* Additional Private & Group Charter Options */}
       <section className="py-20 bg-[#040E26] border-t border-[#073B82]/50 relative">
